@@ -79,7 +79,7 @@ function App() {
             <JsonAutoCompleteInput
               value={value}
               onChange={setValue}
-              placeholder="Type your JSON here..."
+              placeholder="Type your JSON path here..."
               jsonData={demoSchema}
             />
           </div>
