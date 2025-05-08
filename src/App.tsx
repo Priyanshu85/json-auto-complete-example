@@ -78,8 +78,8 @@ function App() {
     <div
       className={`max-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500`}
     >
-      <header className="w-full max-w-2xl mx-auto text-center py-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-2">
+      <header className="w-full max-w-2xl mx-auto text-center py-2">
+        <h1 className="text-4xl md:text-5xl font-extrabold  bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-2">
           json-autocomplete-input
         </h1>
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4">
@@ -119,7 +119,7 @@ function App() {
             Try typing <code>user.</code> here. Autocomplete will suggest keys
             and paths based on the schema and suggestions provided.
           </p>
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 bg-gray-50 dark:bg-gray-800">
+          <div className="rounded-lg p-4 bg-gray-50 dark:bg-gray-800 w-100">
             <JsonAutoCompleteInput
               value={value}
               onChange={setValue}
@@ -132,7 +132,7 @@ function App() {
           <h3 className="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-200">
             Current Value
           </h3>
-          <pre className="bg-gray-100 dark:bg-gray-900 rounded p-4 text-sm overflow-x-auto text-left text-gray-800 dark:text-gray-100 border border-gray-200 dark:border-gray-700 min-h-24">
+          <pre className="bg-gray-100 dark:bg-gray-900 p-4 text-sm overflow-x-auto text-center text-gray-800 dark:text-gray-100  min-h-24">
             {value}
           </pre>
         </div>
